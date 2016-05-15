@@ -70,7 +70,7 @@ static NSString *ID = @"cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    cell.textLabel.text = @"XMG";
+    cell.textLabel.text = [NSString stringWithFormat:@"%zd",indexPath.row];
     
     return cell;
 }
